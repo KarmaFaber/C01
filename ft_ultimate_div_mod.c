@@ -5,11 +5,12 @@ void    ft_ultimate_div_mod( int *a, int *b )
 
         div = *a / *b;
         mod = *a % *b;
+        
         *a = div;
         *b = mod;
 }
 
-/*#include <stdio.h>
+#include <stdio.h>
 int     main() 
 {    
     
@@ -21,9 +22,8 @@ int     main()
     a_pointer = &a;
     b_pointer = &b;
 
-    a_pointer = 11;
-    b_pointer = 2;
-
+    *a_pointer = 11;
+    *b_pointer = 2;
     
     //int div_var;
     //int mod_var;
@@ -35,11 +35,10 @@ int     main()
     
     a_pointer=aux;
     b_pointer=aux2;*/
-    
-    
-    //printf("*a = %p\n*b = %p\n",a_pointer, b_pointer);
 
     ft_ultimate_div_mod(a_pointer, b_pointer);
     
+    printf("*a = %p\n*b = %p\n",a_pointer, b_pointer);
+    
     return 0;
-}*/
+}
