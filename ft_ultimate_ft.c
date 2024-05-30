@@ -1,12 +1,8 @@
 void    ft_ultimate_ft(int *********nbr)
 {
-  *********nbr = 42;  
+    *********nbr = 42;  
 }
-
-
-
-/*
-#include <stdio.h>
+/*#include <stdio.h>
 int     main() 
 {
     
@@ -33,7 +29,6 @@ int     main()
     nbr2 = &nbr3;
     nbr1 = &nbr2;
     nbr = &nbr1;
-    
     
     ft_ultimate_ft(nbr);
     printf("el valor es %d", a);
