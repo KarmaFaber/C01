@@ -25,20 +25,10 @@ int     main()
     *a_pointer = 11;
     *b_pointer = 2;
     
-    //int div_var;
-    //int mod_var;
-    
-    /*int aux;
-    int aux2;
-    aux=a_pointer/b_pointer;
-    aux2=a_pointer%b_pointer;
-    
-    a_pointer=aux;
-    b_pointer=aux2;*/
 
     ft_ultimate_div_mod(a_pointer, b_pointer);
     
-    printf("*a = %p\n*b = %p\n",a_pointer, b_pointer);
+    printf("*a = %d\n*b = %d\n",*a_pointer, *b_pointer);
     
     return 0;
 }
