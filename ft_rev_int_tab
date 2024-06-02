@@ -1,6 +1,6 @@
 /*void ft_rev_int_tab(int *tab, int size);
 {
-    
+ 
 }*/
 
 
@@ -12,34 +12,43 @@ int main()
     int aux_array[size];
     int counter;  
     
-    int *array_pointer[size]; // creamos puntero 
-    array_pointer[size]=&array[size];
-    *array_pointer[size]=array[size]; // apuntamos a la array
+    int *array_pointer; // creamos puntero 
+    array_pointer=&array[size];
+    //*array_pointer=array[size]; // apuntamos a la array
     
     // priint original array
     printf("our array is: \n");
+    counter = 0;
+    
     while (counter < size)
     {
-        printf("%d\n", array[counter]);
+        printf("%d ", array[counter]);
         counter ++;
     }
+    printf("\n \n");
     
     // priint original array_pointer
     printf("our ORIGINAL array_pointer is: \n");
     while (counter < size)
     {
-        printf("%d\n", *array_pointer[counter]);
+        array_pointer[counter]=array[size];
+        printf("%d, ", array_pointer);
         counter ++;
+        
     }
-    printf("\n");
+    
+    printf("\n\n");
     
      // priint original array_pointer
+    counter = size;
     printf("our INVERTED array_pointer is: \n");
-    while (counter < size)
-    {
-        printf("%d\n", *array_pointer[counter]);
-        counter ++;
+    while (counter <= size)
+   {
+       aux_array[size]=array_pointer[size];
+        printf("%d, ", array_pointer);
+        counter --;
+        
     }
-    
+    printf("\n\n");
     return 0;
 }
