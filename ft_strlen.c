@@ -17,11 +17,11 @@ int main()
 {
     
     char *var = "Hello world!";
-    int length;
     
-    length = ft_strlen(var);
+    
+  
 
-    printf("la longitud de cadena es de: %d\n", length);
+    printf("%d\n", ft_strlen(var));
 
     return 0;
 }
