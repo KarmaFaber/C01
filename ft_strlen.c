@@ -17,9 +17,6 @@ int main()
 {
     
     char *var = "Hello world!";
-    
-    
-  
 
     printf("%d\n", ft_strlen(var));
 
