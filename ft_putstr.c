@@ -14,7 +14,8 @@ void  ft_putstr(char *str)
 
 
 /*#include <stdio.h>
-int main() {
+int main() 
+{
     
     char *mystr = "Hello world!";
 
