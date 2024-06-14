@@ -1,18 +1,24 @@
+void	ft_swap(int *a, int *b)
+{
+	int	aux;
 
-
-void ft_rev_int_tab (int *tab, int size)
-{ 
-    int i; // counter
-
-    i = 0;
-    while (i < size/2)
-    {
-        ft_swap(&tab[i], &tab[size-1-i]);
-        i ++;
-    }  
+	aux = *b;
+	*b = *a;
+	*a = aux;
 }
 
-#include <stdio.h>
+void	ft_rev_int_tab(int *tab, int size)
+{
+	int	i;
+
+	i = 0;
+	while (i < size / 2)
+	{
+		ft_swap (&tab[i], &tab[size - 1 - i]);
+		i ++ ;
+	}
+}
+/*#include <stdio.h>
 int main()
 {
     int tab[9] = {2, 5, 7, 9, 10, 12, 16, 24, 777};
@@ -32,4 +38,4 @@ int main()
         i ++ ; 
     }
     return 0;
-}
+}*/
